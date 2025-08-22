@@ -3,14 +3,14 @@ import './Aboutus.css';
 
 const Aboutus = () => {
   const personalDetails = [
-    { label: 'Birthday', value: '22 Feb 1998' },
-    { label: 'Phone', value: '+91 97400 84084' },
-    { label: 'City', value: 'Bangalore, India' }
+    { label: 'Birthday', value: '29 Dec 2007' },
+    { label: 'Phone', value: '+91 6366636405' },
+    { label: 'City', value: 'Mangalore, India' }
   ];
 
   const personalDetailsRight = [
-    { label: 'Age', value: '27' },
-    { label: 'Degree', value: 'B.Tech, CS' },
+    { label: 'Age', value: '18' },
+    { label: 'Degree', value: 'Diploma, CS' },
     { label: 'Freelance', value: 'Available' }
   ];
 
@@ -39,8 +39,8 @@ const Aboutus = () => {
     { name: 'HTML5', percentage: 95 },
     { name: 'CSS3', percentage: 85 },
     { name: 'JavaScript', percentage: 75 },
-    { name: 'PHP', percentage: 70 },
-    { name: 'WordPress', percentage: 80 },
+    { name: 'Video Editing', percentage: 70 },
+    { name: 'Graphic Design', percentage: 80 },
     { name: 'Photoshop', percentage: 70 }
   ];
 
