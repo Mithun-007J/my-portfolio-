@@ -3,7 +3,7 @@ import './Aboutus.css';
 
 const Aboutus = () => {
   const personalDetails = [
-    { label: 'Birthday', value: '29 Dec 2007' },
+    { label: 'Birthday', value: '28 Dec 2007' },
     { label: 'Phone', value: '+91 6366636405' },
     { label: 'City', value: 'Mangalore, India' }
   ];
