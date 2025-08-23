@@ -84,21 +84,12 @@ const Aboutus = () => {
             </div>
           </div>
           
-          <div className="about-illustration">
-            <div className="illustration-placeholder">
-              <div className="desk-illustration">
-                <div className="person">
-                  <div className="head">
-                    <div className="glasses"></div>
-                  </div>
-                  <div className="body"></div>
-                </div>
-                <div className="desk">
-                  <div className="monitor"></div>
-                  <div className="keyboard"></div>
-                </div>
-              </div>
-            </div>
+          <div className="about-image">
+            <img 
+              src="/Mithun_Jain.jpg" 
+              alt="Profile Photo" 
+              className="profile-image"
+            />
           </div>
         </div>
       </section>
