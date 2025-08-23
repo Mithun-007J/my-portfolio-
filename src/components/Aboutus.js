@@ -87,7 +87,7 @@ const Aboutus = () => {
           <div className="about-image">
             <img 
               src="/Mithun_Jain.jpg" 
-              alt="Profile Photo" 
+              alt="Profile" 
               className="profile-image"
             />
           </div>
@@ -149,6 +149,51 @@ const Aboutus = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Location Section */}
+      <section className="location-section">
+        <div className="section-header">
+          <h2>My Location</h2>
+          <div className="underline"></div>
+        </div>
+        
+        <div className="location-content">
+          <div className="location-info">
+            <p>
+              I'm based in Mangalore, India, and work with clients from around the world. 
+              Feel free to reach out if you'd like to collaborate on exciting projects!
+            </p>
+            
+            <div className="location-details">
+              <div className="location-item">
+                <i className="fas fa-map-marker-alt"></i>
+                <span>Dhamrasthala, Kootadhakallu, Belthangady, Karnataka, India</span>
+              </div>
+              <div className="location-item">
+                <i className="fas fa-city"></i>
+                <span>Mangalore, Karnataka, India</span>
+              </div>
+              <div className="location-item">
+                <i className="fas fa-globe"></i>
+                <span>Available for Remote Work Worldwide</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="location-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62208.47267825811!2d74.79632182167966!3d12.914142240692818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4c37bf488f%3A0x827b3a4a4c2b3c7e!2sMangalore%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1699881234567!5m2!1sen!2sus"
+              width="100%"
+              height="300"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="My Location - Mangalore, Karnataka, India"
+            ></iframe>
           </div>
         </div>
       </section>

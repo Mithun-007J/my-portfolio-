@@ -1,25 +1,29 @@
 import React, { useState } from 'react';
 import './Drawer.css';
 
-const Drawer = () => {
+const Drawer = ({ onPageChange, currentPage }) => {
   const [collapsed, setCollapsed] = useState(false);
 
   const socialLinks = [
-    { icon: '🐦', url: '#', platform: 'Twitter' },
-    { icon: 'f', url: '#', platform: 'Facebook' },
-    { icon: '📷', url: '#', platform: 'Instagram' },
-    { icon: '🐙', url: '#', platform: 'GitHub' },
-    { icon: 'in', url: '#', platform: 'LinkedIn' }
+    { icon: 'fab fa-twitter', url: 'https://twitter.com', platform: 'Twitter' },
+    { icon: 'fab fa-facebook', url: 'https://facebook.com', platform: 'Facebook' },
+    { icon: 'fab fa-instagram', url: 'https://instagram.com', platform: 'Instagram' },
+    { icon: 'fab fa-github', url: 'https://github.com', platform: 'GitHub' },
+    { icon: 'fab fa-linkedin', url: 'https://linkedin.com', platform: 'LinkedIn' }
   ];
 
   const navigationItems = [
-    { icon: '🏠', label: 'Home', url: '#home' },
-    { icon: '👤', label: 'About', url: '#about' },
-    { icon: '📄', label: 'Resume', url: '#resume' },
-    { icon: '💼', label: 'Portfolio', url: '#portfolio' },
-    { icon: '🖥️', label: 'Services', url: '#services' },
-    { icon: '✉️', label: 'Contact', url: '#contact' }
+    { icon: '👤', label: 'About', page: 'about' },
+    { icon: '📄', label: 'Resume', page: 'resume' },
+    { icon: '✉️', label: 'Contact', page: 'contact' }
   ];
+
+  const handlePageChange = (page) => {
+    onPageChange(page);
+    if (window.innerWidth <= 768) {
+      setCollapsed(true);
+    }
+  };
 
   return (
     <>
@@ -36,7 +40,7 @@ const Drawer = () => {
         <div className="profile-section">
           <div className="profile-picture">
             <img
-              src="Mithun_Jain.jpg"
+              src="/Mithun_Jain.jpg"
               alt="D.Mithun Jain"
               onError={e => {
                 e.target.style.display = 'none';
@@ -61,7 +65,7 @@ const Drawer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {social.icon}
+              <i className={social.icon}></i>
             </a>
           ))}
         </div>
@@ -69,14 +73,14 @@ const Drawer = () => {
         {/* Navigation Links */}
         <nav className="navigation">
           {navigationItems.map((item, index) => (
-            <a
+            <button
               key={index}
-              href={item.url}
-              className="nav-item"
+              onClick={() => handlePageChange(item.page)}
+              className={`nav-item ${currentPage === item.page ? 'active' : ''}`}
             >
               <span className="nav-icon">{item.icon}</span>
               <span className="nav-label">{item.label}</span>
-            </a>
+            </button>
           ))}
         </nav>
 
@@ -84,7 +88,7 @@ const Drawer = () => {
         <div className="drawer-footer">
           <span className="footer-text">
             Designed by{' '}
-            <a href="#" className="footer-link">D.Mithun Jain</a>
+            <a href="mailto:mithunjain755@gmail.com" className="footer-link">D.Mithun Jain</a>
           </span>
         </div>
       </div>

@@ -1,70 +1,160 @@
-# Getting Started with Create React App
+# My Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with React.js featuring a clean design and smooth navigation.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **About Page**: Professional profile with image and personal details
+- **Resume Page**: Timeline-based experience and education display
+- **Contact Page**: Contact form with Google Maps integration
+- **Responsive Design**: Works perfectly on desktop, tablet, and mobile
+- **Smooth Navigation**: Seamless page transitions with active state highlighting
+- **Scroll to Top**: User-friendly navigation button
+- **Modern UI**: Professional styling with hover effects and animations
 
-### `npm start`
+## 🛠️ Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js 19.1.1
+- CSS3 with modern features
+- Font Awesome icons
+- Google Maps integration
+- Responsive design principles
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📁 Project Structure
 
-### `npm test`
+```
+src/
+├── components/
+│   ├── Aboutus.js          # About page component
+│   ├── Aboutus.css         # About page styles
+│   ├── Contact.js          # Contact page component
+│   ├── Contact.css         # Contact page styles
+│   ├── Resume.js           # Resume page component
+│   ├── Resume.css          # Resume page styles
+│   ├── Drawer.js           # Navigation sidebar
+│   ├── Drawer.css          # Sidebar styles
+│   ├── ScrollToTop.js      # Scroll to top button
+│   └── ScrollToTop.css     # Button styles
+├── App.js                  # Main application component
+├── App.css                 # Main application styles
+└── index.js                # Application entry point
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Getting Started
 
-### `npm run build`
+### Prerequisites
+- Node.js (version 14 or higher)
+- npm or yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd my-portfolio
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Open your browser**
+   Navigate to `http://localhost:3000`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📱 Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Navigation
+- Use the left sidebar to navigate between pages
+- Click on "About", "Resume", or "Contact" to switch pages
+- The active page is highlighted in the navigation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Pages
 
-## Learn More
+#### About Page
+- View personal information and profile image
+- See career statistics and skills
+- Professional summary and details
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Resume Page
+- Professional experience timeline
+- Education history with CGPA
+- Contact information for hiring
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Contact Page
+- Contact form for inquiries
+- Contact information with icons
+- Google Maps integration
+- WhatsApp direct link
 
-### Code Splitting
+### Features
+- **Responsive Design**: Automatically adapts to screen size
+- **Smooth Transitions**: Page changes with fade-in animations
+- **Scroll to Top**: Button appears when scrolling down
+- **Form Validation**: Contact form with required field validation
+- **Interactive Elements**: Hover effects and smooth animations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🎨 Customization
 
-### Analyzing the Bundle Size
+### Colors
+The main color scheme uses:
+- Primary Blue: `#4a90e2`
+- Secondary Blue: `#357abd`
+- Dark Text: `#2c3e50`
+- Light Background: `#f8f9fa`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Styling
+- All components use CSS modules for scoped styling
+- Responsive breakpoints at 768px and 480px
+- Modern CSS features like CSS Grid and Flexbox
 
-### Making a Progressive Web App
+## 📱 Responsive Design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Desktop**: Full sidebar navigation with two-column layouts
+- **Tablet**: Responsive grid layouts with adjusted spacing
+- **Mobile**: Single-column layouts with mobile-optimized navigation
 
-### Advanced Configuration
+## 🔧 Development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Available Scripts
 
-### Deployment
+- `npm start` - Runs the app in development mode
+- `npm run build` - Builds the app for production
+- `npm test` - Launches the test runner
+- `npm run eject` - Ejects from Create React App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Adding New Pages
 
-### `npm run build` fails to minify
+1. Create a new component in the `components/` folder
+2. Add the page to the navigation in `Drawer.js`
+3. Update the `renderContent` function in `App.js`
+4. Add corresponding styles
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🌟 Features to Add
+
+- Portfolio gallery with project showcases
+- Blog section for articles
+- Dark/Light theme toggle
+- Multi-language support
+- Contact form backend integration
+- Analytics integration
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 👨‍💻 Author
+
+**D.Mithun Jain**
+- Email: kishannk11@gmail.com
+- Phone: +91 97406 84686
+- Location: Bangalore, India
+
+---
+
+Built with ❤️ using React.js
